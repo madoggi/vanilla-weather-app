@@ -1,3 +1,39 @@
 body {
   font-family: "Orbitron", sans-serif;
+  background: #d3f5f1;
+}
+
+.weather-wrapper {
+  max-width: 700px;
+  margin: 60px auto;
+}
+
+.app {
+  background: #fff;
+  padding: 40px;
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+  border-radius: 16px;
+  color: #878787;
+}
+
+.app .search-input {
+  background: #f4dbfb;
+  border: none;
+  padding: 15px 20px;
+  display: inline-block;
+  border-radius: 6px;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  height: 50px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.app .btn {
+  background: #ffa7b1;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 15px 0;
+  border: none;
+  height: 50px;
 }
