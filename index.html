@@ -21,7 +21,7 @@
 
     <link rel="stylesheet" href="src/style.css" />
 
-    <title>Vanilla Weather App</title>
+    <title>Vanilla Weather App 🤖</title>
   </head>
   <body>
     <div class="container">
@@ -47,6 +47,43 @@
               </div>
             </div>
           </form>
+          <div class="weather-info">
+            <div class="row">
+              <div class="col-6">
+                <h1 id="city"></h1>
+                <ul>
+                  <li>
+                    <span id="date">ghjhgjhg</span>,
+                    <span id="description">hgjghjhg</span>
+                  </li>
+                  <li>Humidity: <span id="humidity">ghjg</span> %</li>
+                  <li>Wind: <span id="wind">ghjhg</span> m/h</li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <div class="temperature-container d-flex justify-content-end">
+                  <canvas width="52" height="52"> </canvas>
+                  <div>
+                    <span class="temperature">26</span>
+                    <span class="unit-c">°C</span>
+                    <span class="between">|</span>
+                    <span class="unit-f">°F</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <small class="fotter"
+            >This project was coded for <span class="shcd">SheCodes</span> and
+            is
+            <a
+              href="https://github.com/madoggi/vanilla-weather-app"
+              target="_blank"
+              >open-sourced on GitHub</a
+            >
+            by <strong>Marina</strong>
+          </small>
         </div>
       </div>
     </div>
