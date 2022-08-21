@@ -97,6 +97,10 @@ body {
   line-height: 1;
 }
 
+.weather-info .temperature-container {
+  margin-top: 33px;
+}
+
 .app .unit-c,
 .unit-f,
 .between {
