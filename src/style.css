@@ -57,10 +57,11 @@ body {
 .app h1 {
   margin: 20px 0 10px;
   line-height: 29px;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 38px;
   line-height: 48px;
-  color: #272142;
+  color: #7c73f2;
+  display: inline-block;
 }
 
 .app li {
@@ -89,28 +90,32 @@ body {
 }
 
 .app .temperature {
-  color: #f63c39;
+  color: #ff130f;
   font-weight: 700;
-  margin-left: 10px;
   font-weight: 700;
   font-size: 85px;
   line-height: 1;
 }
 
 .weather-info .temperature-container {
-  margin-top: 33px;
+  margin-top: 25px;
 }
 
-.app .unit-c,
-.unit-f,
-.between {
-  color: #f63c39;
-  font-size: 28px;
-  line-height: 36px;
+.app #unit-c,
+#unit-f {
+  color: #f11963;
+  font-size: 21px;
+  line-height: 38px;
   font-weight: 400;
   position: relative;
   line-height: 1;
   top: -34px;
+}
+
+.app #unit-f {
+  display: block;
+  text-align: right;
+  margin-top: 7px;
 }
 
 .app .shcd {

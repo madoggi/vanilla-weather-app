@@ -42,7 +42,7 @@
                 <input
                   type="submit"
                   value="Search"
-                  class="btn btn-primary w-100"
+                  class="btn btn-info w-100"
                 />
               </div>
             </div>
@@ -51,6 +51,7 @@
             <div class="row">
               <div class="col-6">
                 <h1 id="city"></h1>
+                <img src="" alt="Clear" id="icon" width="63" />
                 <ul>
                   <li>
                     <span id="date"></span>,
@@ -64,12 +65,10 @@
               </div>
               <div class="col-6">
                 <div class="temperature-container d-flex justify-content-end">
-                  <canvas width="52" height="52"> </canvas>
                   <div>
                     <span class="temperature">26</span>
-                    <span class="unit-c">°C</span>
-                    <span class="between">|</span>
-                    <span class="unit-f">°F</span>
+                    <a href="#" id="unit-c">°C</a>
+                    <a href="#" id="unit-f">°F</a>
                   </div>
                 </div>
               </div>
