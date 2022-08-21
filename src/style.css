@@ -101,6 +101,14 @@ body {
   margin-top: 25px;
 }
 
+.weather-info .temperature-container .active {
+  cursor: default;
+}
+
+.weather-info .temperature-container .active:hover {
+  text-decoration: none;
+}
+
 .app #unit-c,
 #unit-f {
   color: #f11963;
