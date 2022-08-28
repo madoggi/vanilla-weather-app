@@ -16,6 +16,17 @@ body {
   color: #878787;
 }
 
+#row-two {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-2 {
+  display: inline-block;
+}
+
 .app .search-input {
   background: #f4dbfb;
   border: none;
@@ -36,13 +47,6 @@ body {
   padding: 15px 0;
   border: none;
   height: 50px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
 }
 
 .col-6 {

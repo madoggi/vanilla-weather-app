@@ -46,6 +46,37 @@ function weather(response) {
   );
   iconEl.setAttribute("alt", response.data.weather[0].description);
 }
+
+function displayForecast() {
+  let forecastEl = document.querySelector("#forecast");
+  let days = ["Mon", "Tue", "Wed", "Thu"];
+
+  let forecastHTML = `<span class="forecast-days">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+     <div class="col-2">
+       <div class = "weather-forecast-date">${day}</div>
+          <img
+          src="http://openweathermap.org/img/wn/50d@2x.png"
+          alt=""
+          width="42"
+          />
+            <div class="weather-forecast-temp">
+          <span class="weather-forecast-temp-max"> 18° </span>
+          <span class="weather-forecast-temp-min"> 12° </span>
+           </div>
+      </div>
+     </div>
+      `;
+  });
+
+  forecastHTML = forecastHTML + `</span>`;
+  forecastEl.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
+
 function searchC(city) {
   let apiKey = "d464138be506c07bf313e0df76e1acc5";
   let units = "metric";
@@ -88,3 +119,4 @@ let celsiusLink = document.querySelector("#unit-c");
 celsiusLink.addEventListener("click", celsius);
 
 searchC("Kyiv");
+displayForecast();
