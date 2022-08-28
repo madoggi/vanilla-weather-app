@@ -25,6 +25,31 @@ body {
 
 .col-2 {
   display: inline-block;
+  margin-left: 15px;
+  margin-left: 15px;
+}
+
+.weather-forecast {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  color: #504ea4;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.weather-forecast-temp-max {
+  color: #00bdaa;
+  font-weight: 700;
+}
+
+.weather-forecast-temp-min {
+  color: #92a4c0;
+  font-weight: 700;
+  opacity: 0.6;
 }
 
 .app .search-input {
@@ -113,8 +138,7 @@ body {
   text-decoration: none;
 }
 
-.app #unit-c,
-#unit-f {
+.app #unit-c {
   color: #f11963;
   font-size: 21px;
   line-height: 38px;
@@ -122,12 +146,6 @@ body {
   position: relative;
   line-height: 1;
   top: -34px;
-}
-
-.app #unit-f {
-  display: block;
-  text-align: right;
-  margin-top: 7px;
 }
 
 .app .shcd {

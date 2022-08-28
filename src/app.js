@@ -51,7 +51,7 @@ function displayForecast(response) {
             forecastInfo.weather[0].icon
           }@2x.png"
           alt="${forecastInfo.weather[0].description}"
-          width="42"
+          width="77"
           />
             <div class="weather-forecast-temp">
           <span class="weather-forecast-temp-max">${Math.round(
@@ -117,30 +117,5 @@ function submitH(event) {
 
 let form = document.querySelector("#serach-form");
 form.addEventListener("submit", submitH);
-
-let celsiusTemp = null;
-
-function fahrenheit(event) {
-  event.preventDefault();
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  let tempF = document.querySelector(".temperature");
-  fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
-  tempF.innerHTML = Math.round(fahrenheitTemp);
-}
-
-function celsius(event) {
-  event.preventDefault();
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-  let tempC = document.querySelector(".temperature");
-  tempC.innerHTML = Math.round(celsiusTemp);
-}
-
-let fahrenheitLink = document.querySelector("#unit-f");
-fahrenheitLink.addEventListener("click", fahrenheit);
-
-let celsiusLink = document.querySelector("#unit-c");
-celsiusLink.addEventListener("click", celsius);
 
 searchC("Kyiv");
